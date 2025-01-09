@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: spring_reactive_mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+      MONGO_INITDB_DATABASE: admin
+#  cassandra:
+#    image: cassandra:latest
+#    container_name: cassandra-container
+#    ports:
+#      - "9042:9042"
+#    environment:
+#      - CASSANDRA_USER=admin
+#      - CASSANDRA_PASSWORD=admin
+#    volumes:
+#      - cassandra-data:/var/lib/cassandra
+#
+#volumes:
+#  cassandra-data:

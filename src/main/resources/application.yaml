@@ -1,0 +1,12 @@
+#spring:
+#  data:
+#    cassandra:
+#      contact-points: localhost:9042   # Docker port mapping
+#      keyspace-name: my_keyspace      # Specify the keyspace
+#      schema-action: create_if_not_exists
+#      port: 9042
+#      username: admin                 # Cassandra username
+#      password: admin                 # Cassandra password
+#      local-datacenter: datacenter1   # Datacenter name
+#  cassandra:
+#    cluster-name: TestCluster        # Cluster name (matching Docker configuration)
